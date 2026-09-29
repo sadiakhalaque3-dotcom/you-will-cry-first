@@ -292,6 +292,54 @@ color:var(--muted)
 .grid{
 grid-template-columns:1fr 1fr
 }
+}.creator-card{
+display:grid;
+grid-template-columns:280px 1fr;
+gap:45px;
+align-items:center;
+background:linear-gradient(135deg,#fff,#fdf0f6);
+border:1px solid var(--line);
+border-radius:30px;
+padding:35px;
+box-shadow:var(--shadow);
+margin-top:30px;
+}
+
+.creator-photo{
+width:280px;
+height:280px;
+object-fit:cover;
+border-radius:28px;
+display:block;
+box-shadow:0 15px 35px rgba(32,32,43,.12);
+}
+
+.creator-text h2{
+margin-top:0;
+}
+
+.creator-intro{
+font-size:1.08rem;
+color:#454555;
+max-width:650px;
+}
+
+@media(max-width:650px){
+.creator-card{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.creator-photo{
+width:210px;
+height:210px;
+margin:auto;
+}
+
+.creator-intro{
+margin-left:auto;
+margin-right:auto;
+}
 }
 
 @media(max-width:580px){
@@ -1662,14 +1710,50 @@ Keep difficult items visible.
 
 </section>
 
-</main>
 
+
+<section id="creator">
+
+<span class="section-number">13 · THE CREATOR</span>
+
+<div class="creator-card">
+
+<img src="soad_creator_pink.jpg"
+     alt="Soad Khalaque, creator of You Will Cry First"
+     class="creator-photo">
+
+<div class="creator-text">
+
+<h2>Built by Soad.</h2>
+
+<p class="creator-intro">
+This project grew from a simple idea: learning a language
+doesn't have to begin with perfection. It can begin with
+curiosity, mistakes, frustration, and the decision to keep going.
+</p>
+
+<p>
+<strong>Soad Khalaque</strong><br>
+Chinese Language & Culture learner · Self-directed creator
+</p>
+
+<p class="small">
+Creator of <em>You Will Cry First · 你会哭的</em>,
+a digital learning project exploring Chinese language,
+characters, pronunciation, grammar, speaking and culture.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
 
 <footer>
 
-<p>
-你会哭的 · You Will Cry First.
-</p>
+<p>你会哭的 · You Will Cry First.</p>
 
 <p>
 A self-directed Chinese language & culture learning project.
@@ -1680,6 +1764,7 @@ Built by Soad Khalaque.
 </p>
 
 </footer>
+
 
 
 <script>
