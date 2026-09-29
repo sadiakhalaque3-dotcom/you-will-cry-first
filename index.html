@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="You Will Cry First — an interactive, self-directed Chinese language and culture learning room created by Sadia Khalaque.">
+<meta name="description" content="You Will Cry First — a self-directed Chinese language and culture learning project by Sadia Khalaque.">
 <title>You Will Cry First · 你会哭的</title>
 
 <style>
 :root{
-  --ink:#25344F;
-  --ink-deep:#1d2a40;
+  --navy:#25344F;
   --slate:#617891;
   --tan:#D5B893;
   --coffee:#6F4D38;
@@ -18,34 +17,43 @@
   --moss:#839958;
   --beige:#F7F4D5;
   --rose:#D3968C;
-  --midnight:#105666;
-  --paper:#fbfaf6;
-  --cream:#f4eee4;
-  --white:#fffdf9;
+  --teal:#105666;
+  --paper:#FBFAF6;
+  --white:#FFFDF9;
   --line:rgba(37,52,79,.14);
-  --shadow:0 16px 45px rgba(37,52,79,.12);
+  --shadow:0 14px 40px rgba(37,52,79,.11);
 }
 
-*{box-sizing:border-box;scroll-behavior:smooth}
+*{
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
 
 body{
   margin:0;
-  background:
-    radial-gradient(circle at 10% 5%,rgba(211,150,140,.16),transparent 28%),
-    radial-gradient(circle at 90% 30%,rgba(131,153,88,.14),transparent 30%),
-    var(--paper);
-  color:var(--ink);
+  background:var(--paper);
+  color:var(--navy);
   font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
   line-height:1.7;
 }
 
-a{color:inherit}
-button,input,textarea{font:inherit}
+a{
+  color:inherit;
+}
+
+button,input,textarea{
+  font:inherit;
+}
 
 header{
   background:
-    linear-gradient(135deg,rgba(37,52,79,.98),rgba(16,86,102,.96) 48%,rgba(111,77,56,.95));
-  color:#fff;
+    linear-gradient(
+      135deg,
+      var(--navy),
+      var(--teal) 48%,
+      var(--coffee)
+    );
+  color:white;
   padding:22px 6% 100px;
   border-bottom:6px solid var(--tan);
   position:relative;
@@ -55,12 +63,12 @@ header{
 header:after{
   content:"";
   position:absolute;
-  width:360px;
-  height:360px;
+  width:380px;
+  height:380px;
   border-radius:50%;
-  right:-120px;
-  bottom:-180px;
-  background:rgba(211,150,140,.22);
+  right:-130px;
+  bottom:-190px;
+  background:rgba(211,150,140,.2);
 }
 
 nav{
@@ -94,12 +102,12 @@ nav{
   text-decoration:none;
   font-size:.82rem;
   color:#fff;
-  border:1px solid rgba(255,255,255,.16);
-  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.07);
 }
 
 .navlinks a:hover{
-  background:rgba(247,244,213,.18);
+  background:rgba(247,244,213,.2);
 }
 
 .hero{
@@ -141,7 +149,7 @@ h3{
 .lead{
   max-width:760px;
   font-size:1.2rem;
-  color:#f7f4e8;
+  color:#F7F4E8;
 }
 
 .button{
@@ -150,7 +158,7 @@ h3{
   padding:13px 20px;
   border-radius:999px;
   background:var(--beige);
-  color:var(--ink);
+  color:var(--navy);
   text-decoration:none;
   font-weight:900;
   border:0;
@@ -166,63 +174,119 @@ main{
 section{
   padding:90px 0;
   border-bottom:1px solid var(--line);
-  position:relative;
 }
 
 section:nth-of-type(1){
-  background:linear-gradient(135deg,rgba(211,150,140,.14),rgba(247,244,213,.38));
+  background:linear-gradient(
+    135deg,
+    rgba(211,150,140,.15),
+    rgba(247,244,213,.45)
+  );
 }
 
 section:nth-of-type(2){
-  background:linear-gradient(135deg,rgba(37,52,79,.08),rgba(97,120,145,.13));
+  background:linear-gradient(
+    135deg,
+    rgba(37,52,79,.08),
+    rgba(97,120,145,.14)
+  );
 }
 
 section:nth-of-type(3){
-  background:linear-gradient(135deg,rgba(16,86,102,.08),rgba(247,244,213,.42));
+  background:linear-gradient(
+    135deg,
+    rgba(16,86,102,.08),
+    rgba(247,244,213,.45)
+  );
 }
 
 section:nth-of-type(4){
-  background:linear-gradient(135deg,rgba(131,153,88,.12),rgba(247,244,213,.5));
+  background:linear-gradient(
+    135deg,
+    rgba(131,153,88,.12),
+    rgba(247,244,213,.5)
+  );
 }
 
 section:nth-of-type(5){
-  background:linear-gradient(135deg,rgba(213,184,147,.18),rgba(211,150,140,.1));
+  background:linear-gradient(
+    135deg,
+    rgba(213,184,147,.2),
+    rgba(211,150,140,.1)
+  );
 }
 
 section:nth-of-type(6){
-  background:linear-gradient(135deg,rgba(111,77,56,.08),rgba(247,244,213,.42));
+  background:linear-gradient(
+    135deg,
+    rgba(111,77,56,.08),
+    rgba(247,244,213,.45)
+  );
 }
 
 section:nth-of-type(7){
-  background:linear-gradient(135deg,rgba(99,32,36,.08),rgba(211,150,140,.13));
+  background:linear-gradient(
+    135deg,
+    rgba(99,32,36,.08),
+    rgba(211,150,140,.13)
+  );
 }
 
 section:nth-of-type(8){
-  background:linear-gradient(135deg,rgba(16,86,102,.1),rgba(97,120,145,.12));
+  background:linear-gradient(
+    135deg,
+    rgba(16,86,102,.1),
+    rgba(97,120,145,.12)
+  );
 }
 
 section:nth-of-type(9){
-  background:linear-gradient(135deg,rgba(10,51,35,.08),rgba(131,153,88,.14));
+  background:linear-gradient(
+    135deg,
+    rgba(10,51,35,.08),
+    rgba(131,153,88,.14)
+  );
 }
 
 section:nth-of-type(10){
-  background:linear-gradient(135deg,rgba(211,150,140,.12),rgba(247,244,213,.42));
+  background:linear-gradient(
+    135deg,
+    rgba(211,150,140,.12),
+    rgba(247,244,213,.45)
+  );
 }
 
 section:nth-of-type(11){
-  background:linear-gradient(135deg,rgba(37,52,79,.07),rgba(213,184,147,.18));
+  background:linear-gradient(
+    135deg,
+    rgba(37,52,79,.07),
+    rgba(213,184,147,.2)
+  );
 }
 
 section:nth-of-type(12){
-  background:linear-gradient(135deg,rgba(111,77,56,.08),rgba(247,244,213,.4));
+  background:linear-gradient(
+    135deg,
+    rgba(111,77,56,.08),
+    rgba(247,244,213,.4)
+  );
 }
 
 section:nth-of-type(13){
-  background:linear-gradient(135deg,rgba(10,51,35,.1),rgba(16,86,102,.1),rgba(211,150,140,.1));
+  background:linear-gradient(
+    135deg,
+    rgba(10,51,35,.1),
+    rgba(16,86,102,.1),
+    rgba(211,150,140,.1)
+  );
 }
 
 section:nth-of-type(14){
-  background:linear-gradient(135deg,rgba(99,32,36,.08),rgba(247,244,213,.5));
+  background:linear-gradient(
+    135deg,
+    rgba(99,32,36,.08),
+    rgba(247,244,213,.5)
+  );
 }
 
 .section-number{
@@ -243,17 +307,16 @@ section:nth-of-type(14){
 }
 
 .card{
-  background:rgba(255,253,249,.9);
+  background:rgba(255,253,249,.92);
   border:1px solid var(--line);
   border-radius:22px;
   padding:24px;
   box-shadow:var(--shadow);
-  backdrop-filter:blur(8px);
+  transition:.2s ease;
 }
 
 .card:hover{
-  transform:translateY(-2px);
-  transition:.2s ease;
+  transform:translateY(-3px);
 }
 
 .cn{
@@ -262,7 +325,7 @@ section:nth-of-type(14){
 }
 
 .pinyin{
-  color:var(--midnight);
+  color:var(--teal);
   font-weight:800;
 }
 
@@ -274,7 +337,7 @@ section:nth-of-type(14){
 .tag{
   display:inline-block;
   background:var(--rose);
-  color:#fff;
+  color:white;
   padding:4px 9px;
   border-radius:999px;
   font-size:.76rem;
@@ -293,7 +356,7 @@ section:nth-of-type(14){
 table{
   width:100%;
   border-collapse:collapse;
-  background:rgba(255,253,249,.94);
+  background:rgba(255,253,249,.95);
   border-radius:16px;
   overflow:hidden;
 }
@@ -305,13 +368,13 @@ th,td{
 }
 
 th{
-  background:var(--ink);
+  background:var(--navy);
   color:var(--beige);
 }
 
 .quiz{
   margin-top:20px;
-  background:rgba(247,244,213,.82);
+  background:rgba(247,244,213,.84);
   border-radius:20px;
   padding:22px;
 }
@@ -320,7 +383,7 @@ th{
 .community-form button{
   border:1px solid var(--line);
   background:var(--white);
-  color:var(--ink);
+  color:var(--navy);
   border-radius:12px;
   padding:10px 14px;
   margin:5px;
@@ -330,7 +393,7 @@ th{
 .quiz button:hover,
 .community-form button:hover{
   background:var(--rose);
-  color:#fff;
+  color:white;
 }
 
 .result{
@@ -362,7 +425,12 @@ summary{
 .progress span{
   display:block;
   height:100%;
-  background:linear-gradient(90deg,var(--rose),var(--moss),var(--midnight));
+  background:linear-gradient(
+    90deg,
+    var(--rose),
+    var(--moss),
+    var(--teal)
+  );
   width:0;
 }
 
@@ -379,7 +447,7 @@ summary{
   border-radius:14px;
   padding:14px;
   background:rgba(255,253,249,.95);
-  color:var(--ink);
+  color:var(--navy);
 }
 
 .journal textarea,
@@ -388,12 +456,20 @@ summary{
   resize:vertical;
 }
 
+/* CREATOR */
+
 .creator-card{
   display:grid;
   grid-template-columns:280px 1fr;
   gap:45px;
   align-items:center;
-  background:linear-gradient(135deg,rgba(247,244,213,.96),rgba(211,150,140,.18),rgba(16,86,102,.08));
+  background:
+    linear-gradient(
+      135deg,
+      rgba(247,244,213,.96),
+      rgba(211,150,140,.18),
+      rgba(16,86,102,.08)
+    );
   border:1px solid var(--line);
   border-radius:30px;
   padding:35px;
@@ -465,7 +541,7 @@ summary{
 
 .material-item a{
   font-weight:800;
-  color:var(--midnight);
+  color:var(--teal);
   text-decoration:none;
 }
 
@@ -481,7 +557,11 @@ summary{
 }
 
 .community-note{
-  background:linear-gradient(135deg,var(--green),var(--midnight));
+  background:linear-gradient(
+    135deg,
+    var(--green),
+    var(--teal)
+  );
   color:var(--beige);
   border-radius:22px;
   padding:24px;
@@ -492,7 +572,7 @@ footer{
   padding:45px 6%;
   text-align:center;
   color:#687386;
-  background:var(--ink);
+  background:var(--navy);
 }
 
 footer p{
@@ -501,6 +581,7 @@ footer p{
 }
 
 @media(max-width:850px){
+
   .grid{
     grid-template-columns:1fr 1fr;
   }
@@ -511,6 +592,7 @@ footer p{
 }
 
 @media(max-width:650px){
+
   .creator-card{
     grid-template-columns:1fr;
     text-align:center;
@@ -533,6 +615,7 @@ footer p{
 }
 
 @media(max-width:580px){
+
   header{
     padding-bottom:65px;
   }
@@ -655,6 +738,7 @@ Short, repeated review is more useful than trying to remember everything once.
 
 </section>
 
+
 <section id="pinyin">
 
 <span class="section-number">02 · PINYIN</span>
@@ -742,9 +826,7 @@ Lesson 1 — 你好 nǐ hǎo
 
 <div class="lesson card">
 
-<h3>
-Practice
-</h3>
+<h3>Practice</h3>
 
 <p>
 Read aloud slowly:
@@ -760,6 +842,7 @@ Then say:
 </div>
 
 </section>
+
 
 <section id="tones">
 
@@ -822,9 +905,7 @@ Tone changes meaning, so practice listening and producing the pitch movement.
 
 <div class="card lesson">
 
-<h3>
-High-value tone practice
-</h3>
+<h3>High-value tone practice</h3>
 
 <p><b>mā · má · mǎ · mà</b></p>
 <p><b>shī · shí · shǐ · shì</b></p>
@@ -850,6 +931,7 @@ Example: <b>你好 nǐ hǎo</b> is commonly pronounced approximately <b>ní hǎo
 </details>
 
 </section>
+
 
 <section id="hanzi">
 
@@ -891,9 +973,7 @@ Look for components, radicals, structure and recurring shapes.
 
 <div class="lesson card">
 
-<h3>
-Basic stroke-order principles
-</h3>
+<h3>Basic stroke-order principles</h3>
 
 <ol>
 <li>Horizontal before vertical in many common structures.</li>
@@ -910,3 +990,1057 @@ Stroke order has exceptions, so learn it character-by-character when you are uns
 </div>
 
 </section>
+
+
+<section id="vocab">
+
+<span class="section-number">05 · VOCABULARY</span>
+
+<h2>
+Words live in context.
+</h2>
+
+<p class="intro">
+Start with high-frequency words and immediately place them into short sentences.
+</p>
+
+<table>
+
+<tr>
+<th>Chinese</th>
+<th>Pinyin</th>
+<th>English</th>
+<th>Bangla</th>
+</tr>
+
+<tr><td>我</td><td>wǒ</td><td>I / me</td><td>আমি</td></tr>
+<tr><td>你</td><td>nǐ</td><td>you</td><td>তুমি / আপনি</td></tr>
+<tr><td>他</td><td>tā</td><td>he / him</td><td>সে / তিনি</td></tr>
+<tr><td>她</td><td>tā</td><td>she / her</td><td>সে / তিনি</td></tr>
+<tr><td>我们</td><td>wǒmen</td><td>we / us</td><td>আমরা</td></tr>
+<tr><td>学习</td><td>xuéxí</td><td>study / learn</td><td>পড়া / শেখা</td></tr>
+<tr><td>中文</td><td>Zhōngwén</td><td>Chinese language</td><td>চীনা ভাষা</td></tr>
+<tr><td>老师</td><td>lǎoshī</td><td>teacher</td><td>শিক্ষক</td></tr>
+<tr><td>学生</td><td>xuésheng</td><td>student</td><td>শিক্ষার্থী</td></tr>
+<tr><td>朋友</td><td>péngyou</td><td>friend</td><td>বন্ধু</td></tr>
+<tr><td>家</td><td>jiā</td><td>home / family</td><td>বাড়ি / পরিবার</td></tr>
+<tr><td>吃</td><td>chī</td><td>eat</td><td>খাওয়া</td></tr>
+<tr><td>喝</td><td>hē</td><td>drink</td><td>পান করা</td></tr>
+<tr><td>喜欢</td><td>xǐhuan</td><td>like</td><td>পছন্দ করা</td></tr>
+<tr><td>今天</td><td>jīntiān</td><td>today</td><td>আজ</td></tr>
+
+</table>
+
+<div class="lesson card">
+
+<h3>Build sentences</h3>
+
+<p>
+<b>我学习中文。</b>
+Wǒ xuéxí Zhōngwén.
+— I study Chinese.
+</p>
+
+<p>
+<b>我喜欢中国文化。</b>
+Wǒ xǐhuan Zhōngguó wénhuà.
+— I like Chinese culture.
+</p>
+
+<p>
+<b>你吃饭了吗？</b>
+Nǐ chīfàn le ma?
+— Have you eaten?
+</p>
+
+</div>
+
+</section>
+
+
+<section id="grammar">
+
+<span class="section-number">06 · GRAMMAR</span>
+
+<h2>
+Build the sentence.
+</h2>
+
+<p class="intro">
+Mandarin often communicates through clear word order, particles and context.
+Learn patterns instead of translating word-for-word.
+</p>
+
+<details open>
+<summary>1. Subject + Verb + Object</summary>
+<p><b>我学习中文。</b> Wǒ xuéxí Zhōngwén. — I study Chinese.</p>
+</details>
+
+<details>
+<summary>2. 是 — “to be” for identification</summary>
+<p><b>我是学生。</b> Wǒ shì xuésheng. — I am a student.</p>
+</details>
+
+<details>
+<summary>3. 有 — “to have / there is”</summary>
+<p><b>我有一个朋友。</b> Wǒ yǒu yí ge péngyou. — I have a friend.</p>
+</details>
+
+<details>
+<summary>4. 吗 — yes/no question</summary>
+<p><b>你是学生吗？</b> Nǐ shì xuésheng ma? — Are you a student?</p>
+</details>
+
+<details>
+<summary>5. 不 — basic negation</summary>
+<p><b>我不喝咖啡。</b> Wǒ bù hē kāfēi. — I don't drink coffee.</p>
+</details>
+
+<details>
+<summary>6. 的 — possession / description</summary>
+<p><b>我的书</b> wǒ de shū — my book.</p>
+</details>
+
+<details>
+<summary>7. Measure words</summary>
+<p><b>一个人</b> yí ge rén — one person.<br><b>本书</b> běn shū — one book.</p>
+</details>
+
+<details>
+<summary>8. 了 — completed action / changed state</summary>
+<p><b>我吃饭了。</b> Wǒ chīfàn le. — I have eaten / I ate.</p>
+</details>
+
+<details>
+<summary>9. 过 — past experience</summary>
+<p><b>我去过中国。</b> Wǒ qù guo Zhōngguó. — I have been to China.</p>
+</details>
+
+<details>
+<summary>10. 在 — location / ongoing action</summary>
+<p><b>我在学校学习。</b> Wǒ zài xuéxiào xuéxí. — I study at school.</p>
+</details>
+
+</section>
+
+
+<section id="speaking">
+
+<span class="section-number">07 · SPEAKING</span>
+
+<h2>
+Turn knowledge into a voice.
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<span class="tag">Greeting</span>
+<p><b>A:</b> 你好！Nǐ hǎo!</p>
+<p><b>B:</b> 你好！Nǐ hǎo!</p>
+</div>
+
+<div class="card">
+<span class="tag">Introduction</span>
+<p>
+<b>我叫Sadia。</b><br>
+Wǒ jiào Sadia.<br>
+My name is Sadia.
+</p>
+</div>
+
+<div class="card">
+<span class="tag">Study</span>
+<p>
+<b>我学习中文。</b><br>
+Wǒ xuéxí Zhōngwén.<br>
+I study Chinese.
+</p>
+</div>
+
+<div class="card">
+<span class="tag">Polite</span>
+<p><b>谢谢。</b> Xièxie. — Thank you.</p>
+<p><b>不客气。</b> Bú kèqi. — You're welcome.</p>
+</div>
+
+<div class="card">
+<span class="tag">Shopping</span>
+<p>
+<b>多少钱？</b><br>
+Duōshao qián?<br>
+How much is it?
+</p>
+</div>
+
+<div class="card">
+<span class="tag">Directions</span>
+<p>
+<b>洗手间在哪里？</b><br>
+Xǐshǒujiān zài nǎlǐ?<br>
+Where is the restroom?
+</p>
+</div>
+
+</div>
+
+<div class="lesson card">
+
+<h3>30-second speaking challenge</h3>
+
+<p>
+Say your name, where you study, what you are learning and one thing you like.
+</p>
+
+<p>
+<b>
+你好！我叫Sadia。我是学生。我学习中文。
+我喜欢____。很高兴认识你！
+</b>
+</p>
+
+</div>
+
+</section>
+
+
+<section id="reading">
+
+<span class="section-number">08 · READING</span>
+
+<h2>
+Read small. Understand deeply.
+</h2>
+
+<div class="card">
+
+<h3>Text 01 — 我的学习</h3>
+
+<p class="cn">
+我叫Sadia。我是学生。我学习中文。中文很有意思，但是有时候很难。
+我每天学习一点儿。我喜欢听中文，也喜欢看中国文化。我要继续学习。
+</p>
+
+<p>
+<b>Pinyin:</b><br>
+Wǒ jiào Sadia.<br>
+Wǒ shì xuésheng.<br>
+Wǒ xuéxí Zhōngwén.<br>
+Zhōngwén hěn yǒuyìsi, dànshì yǒushíhou hěn nán.<br>
+Wǒ měitiān xuéxí yìdiǎnr.<br>
+Wǒ xǐhuan tīng Zhōngwén, yě xǐhuan kàn Zhōngguó wénhuà.<br>
+Wǒ yào jìxù xuéxí.
+</p>
+
+<p>
+<b>Meaning:</b><br>
+My name is Sadia. I am a student. I study Chinese.
+Chinese is interesting, but sometimes difficult.
+I study a little every day.
+I like listening to Chinese, and I also like learning about Chinese culture.
+I want to continue studying.
+</p>
+
+</div>
+
+<div class="quiz">
+
+<h3>Comprehension</h3>
+
+<p>
+What does <b>每天</b> mean?
+</p>
+
+<button onclick="answer(this,false)">every week</button>
+<button onclick="answer(this,true)">every day</button>
+<button onclick="answer(this,false)">every year</button>
+
+<div class="result"></div>
+
+</div>
+
+</section>
+
+
+<section id="culture">
+
+<span class="section-number">09 · CULTURE</span>
+
+<h2>
+Language doesn't exist alone.
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>春节 · Chūnjié</h3>
+<p>
+Chinese New Year / Spring Festival is associated with family gatherings,
+traditional foods, decorations and cultural customs.
+Dates follow the traditional lunisolar calendar.
+</p>
+</div>
+
+<div class="card">
+<h3>中秋节 · Zhōngqiū Jié</h3>
+<p>
+Mid-Autumn Festival is associated with the full moon,
+family reunion and mooncakes in many Chinese communities.
+</p>
+</div>
+
+<div class="card">
+<h3>茶 · Chá</h3>
+<p>
+Tea has a long history in China and is connected with everyday life,
+hospitality and cultural traditions.
+</p>
+</div>
+
+<div class="card">
+<h3>书法 · Shūfǎ</h3>
+<p>
+Chinese calligraphy treats writing as both communication and an art form,
+with attention to brush movement, structure and balance.
+</p>
+</div>
+
+<div class="card">
+<h3>饮食文化</h3>
+<p>
+Chinese food culture varies greatly by region.
+Taste, ingredients, climate and local history all shape regional cuisines.
+</p>
+</div>
+
+<div class="card">
+<h3>礼貌 · Lǐmào</h3>
+<p>
+Politeness and social context matter in Chinese communication.
+Expressions, titles and forms of address change depending on relationship and situation.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="practice">
+
+<span class="section-number">10 · PRACTICE CENTER</span>
+
+<h2>
+Test yourself.
+</h2>
+
+<div class="grid">
+
+<div class="quiz card">
+<h3>Vocabulary</h3>
+<p>What does <b>学习 xuéxí</b> mean?</p>
+<button onclick="answer(this,true)">to study</button>
+<button onclick="answer(this,false)">to eat</button>
+<button onclick="answer(this,false)">to sleep</button>
+<div class="result"></div>
+</div>
+
+<div class="quiz card">
+<h3>Grammar</h3>
+<p>Which particle commonly forms a yes/no question?</p>
+<button onclick="answer(this,false)">的</button>
+<button onclick="answer(this,true)">吗</button>
+<button onclick="answer(this,false)">了</button>
+<div class="result"></div>
+</div>
+
+<div class="quiz card">
+<h3>Character</h3>
+<p>What does <b>人</b> mean?</p>
+<button onclick="answer(this,true)">person</button>
+<button onclick="answer(this,false)">water</button>
+<button onclick="answer(this,false)">book</button>
+<div class="result"></div>
+</div>
+
+<div class="quiz card">
+<h3>Tones</h3>
+<p>Which mark represents the 4th tone?</p>
+<button onclick="answer(this,false)">ā</button>
+<button onclick="answer(this,false)">á</button>
+<button onclick="answer(this,false)">ǎ</button>
+<button onclick="answer(this,true)">à</button>
+<div class="result"></div>
+</div>
+
+<div class="quiz card">
+<h3>Translation</h3>
+<p>“我学习中文。” means:</p>
+<button onclick="answer(this,false)">I eat Chinese food.</button>
+<button onclick="answer(this,true)">I study Chinese.</button>
+<button onclick="answer(this,false)">I speak English.</button>
+<div class="result"></div>
+</div>
+
+<div class="quiz card">
+<h3>Culture</h3>
+<p>Which festival is strongly associated with mooncakes?</p>
+<button onclick="answer(this,false)">春节</button>
+<button onclick="answer(this,true)">中秋节</button>
+<button onclick="answer(this,false)">端午节</button>
+<div class="result"></div>
+</div>
+
+</div>
+
+<div class="card lesson">
+
+<h3>My progress</h3>
+
+<p>Mark what you have practiced:</p>
+
+<div class="checklist">
+
+<label>
+<input type="checkbox" onchange="progress()">
+Pinyin
+</label>
+
+<label>
+<input type="checkbox" onchange="progress()">
+Tones
+</label>
+
+<label>
+<input type="checkbox" onchange="progress()">
+Hanzi
+</label>
+
+<label>
+<input type="checkbox" onchange="progress()">
+Vocabulary
+</label>
+
+<label>
+<input type="checkbox" onchange="progress()">
+Grammar
+</label>
+
+<label>
+<input type="checkbox" onchange="progress()">
+Speaking
+</label>
+
+<label>
+<input type="checkbox" onchange="progress()">
+Reading
+</label>
+
+<label>
+<input type="checkbox" onchange="progress()">
+Culture
+</label>
+
+</div>
+
+<div class="progress">
+<span id="bar"></span>
+</div>
+
+<p id="progressText" class="small">
+0% complete
+</p>
+
+</div>
+
+</section>
+
+
+<section id="journal">
+
+<span class="section-number">11 · LEARNING JOURNAL</span>
+
+<h2>
+Keep the evidence.
+</h2>
+
+<p class="intro">
+Record what confused you, what finally clicked and what you want to return to.
+</p>
+
+<div class="journal card">
+
+<label>
+<b>What did I learn today?</b>
+</label>
+
+<textarea
+id="journalText"
+placeholder="Write a few sentences..."
+></textarea>
+
+<button class="button" onclick="saveJournal()">
+Save on this device
+</button>
+
+<p id="saved" class="small"></p>
+
+</div>
+
+</section>
+
+
+<section id="resources">
+
+<span class="section-number">12 · RESOURCE MAP</span>
+
+<h2>
+Where to continue.
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Reference</h3>
+<p>
+Use a reputable Chinese dictionary/reference when checking pronunciation,
+definitions and example usage.
+</p>
+</div>
+
+<div class="card">
+<h3>Listening</h3>
+<p>
+Pair written lessons with native-speaker audio whenever possible.
+Listen first, read second, repeat third.
+</p>
+</div>
+
+<div class="card">
+<h3>Review cycle</h3>
+<p>
+New → same day review → next day review → weekly review.
+Keep difficult items visible.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="community">
+
+<span class="section-number">13 · COMMUNITY ROOM</span>
+
+<h2>
+Learn together.
+</h2>
+
+<p class="intro">
+A space for learners to exchange questions, encouragement,
+study notes and useful learning materials.
+</p>
+
+<div class="community-note">
+
+<h3>学习一起 · Learn together</h3>
+
+<p>
+Ask a question. Share a discovery. Recommend a resource.
+Help another learner understand something that once confused you.
+</p>
+
+<p class="small" style="color:#F7F4D5;">
+This prototype stores posts on the current device. A future version
+can connect this room to a shared database for real-time communication.
+</p>
+
+</div>
+
+<div class="community-shell">
+
+<div>
+
+<div class="card">
+
+<h3>💬 Learner Chat</h3>
+
+<div id="chatFeed" class="community-feed">
+
+<div class="chat-message">
+<strong>You Will Cry First</strong>
+<small>Welcome message</small>
+<p>
+欢迎来到学习室！欢迎大家一起学习中文。
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="card lesson">
+
+<h3>Send a message</h3>
+
+<div class="community-form">
+
+<div class="row">
+
+<input
+id="chatName"
+type="text"
+placeholder="Your name"
+>
+
+<input
+id="chatTopic"
+type="text"
+placeholder="Topic e.g. tones"
+>
+
+</div>
+
+<textarea
+id="chatMessage"
+placeholder="Share a question, tip or thought..."
+></textarea>
+
+<button class="button" onclick="sendMessage()">
+Post to learning room
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div>
+
+<div class="card">
+
+<h3>📚 Share Materials</h3>
+
+<p class="small">
+Share a useful link, article, PDF location or learning resource.
+</p>
+
+<div class="community-form">
+
+<input
+id="materialName"
+type="text"
+placeholder="Your name"
+>
+
+<input
+id="materialTitle"
+type="text"
+placeholder="Material title"
+>
+
+<input
+id="materialLink"
+type="url"
+placeholder="https://..."
+>
+
+<button class="button" onclick="shareMaterial()">
+Add material
+</button>
+
+</div>
+
+</div>
+
+<div class="card lesson">
+
+<h3>Material Shelf</h3>
+
+<div id="materialFeed">
+
+<div class="material-item">
+<strong>Learning shelf</strong>
+<p class="small">
+Shared learner resources will appear here.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="creator">
+
+<span class="section-number">14 · THE CREATOR</span>
+
+<div class="creator-card">
+
+<img
+src="ChatGPT Image Sep 30, 2026, 02_09_48 AM.png"
+alt="Sadia Khalaque, creator of You Will Cry First"
+class="creator-photo"
+>
+
+<div class="creator-text">
+
+<h2>Built by Sadia Khalaque.</h2>
+
+<p class="creator-intro">
+This project grew from a simple idea: learning a language
+doesn't have to begin with perfection. It can begin with
+curiosity, mistakes, frustration, and the decision to keep going.
+</p>
+
+<p>
+<strong>Sadia Khalaque</strong><br>
+Chinese Language & Culture learner · Self-directed creator
+</p>
+
+<p class="small">
+Creator of <em>You Will Cry First · 你会哭的</em>,
+a digital learning project exploring Chinese language,
+characters, pronunciation, grammar, speaking and culture.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>
+你会哭的 · You Will Cry First.
+</p>
+
+<p>
+A self-directed Chinese language & culture learning project.
+</p>
+
+<p>
+Built by Sadia Khalaque.
+</p>
+
+</footer>
+
+
+<script>
+
+function answer(btn,correct){
+
+  const box=btn.parentElement;
+  const result=box.querySelector('.result');
+
+  if(correct){
+
+    result.textContent='✓ Correct — keep going!';
+    result.style.color='#0A3323';
+
+  }else{
+
+    result.textContent='Not quite — try again.';
+    result.style.color='#632024';
+
+  }
+
+}
+
+
+function progress(){
+
+  const boxes=[
+    ...document.querySelectorAll('.checklist input')
+  ];
+
+  const done=boxes.filter(x=>x.checked).length;
+
+  const pct=boxes.length
+    ? Math.round(done/boxes.length*100)
+    : 0;
+
+  document.getElementById('bar').style.width=pct+'%';
+
+  document.getElementById('progressText').textContent=
+    pct+'% complete';
+
+  localStorage.setItem(
+    'ywcf-progress',
+    JSON.stringify(boxes.map(x=>x.checked))
+  );
+
+}
+
+
+function saveJournal(){
+
+  localStorage.setItem(
+    'ywcf-journal',
+    document.getElementById('journalText').value
+  );
+
+  document.getElementById('saved').textContent=
+    'Saved on this device.';
+
+}
+
+
+function sendMessage(){
+
+  const name=document.getElementById('chatName').value.trim();
+  const topic=document.getElementById('chatTopic').value.trim();
+  const message=document.getElementById('chatMessage').value.trim();
+
+  if(!name || !message){
+
+    alert('Please enter your name and message.');
+
+    return;
+  }
+
+  const post={
+    name:name,
+    topic:topic || 'General',
+    message:message,
+    time:new Date().toLocaleString()
+  };
+
+  const posts=
+    JSON.parse(localStorage.getItem('ywcf-chat') || '[]');
+
+  posts.push(post);
+
+  localStorage.setItem(
+    'ywcf-chat',
+    JSON.stringify(posts)
+  );
+
+  document.getElementById('chatName').value='';
+  document.getElementById('chatTopic').value='';
+  document.getElementById('chatMessage').value='';
+
+  renderChat();
+
+}
+
+
+function renderChat(){
+
+  const feed=document.getElementById('chatFeed');
+
+  const posts=
+    JSON.parse(localStorage.getItem('ywcf-chat') || '[]');
+
+  let html=`
+    <div class="chat-message">
+      <strong>You Will Cry First</strong>
+      <small>Welcome message</small>
+      <p>
+        欢迎来到学习室！欢迎大家一起学习中文。
+      </p>
+    </div>
+  `;
+
+  posts.forEach(post=>{
+
+    html+=`
+      <div class="chat-message">
+        <strong>${escapeHTML(post.name)}</strong>
+        <small>
+          ${escapeHTML(post.topic)} · ${escapeHTML(post.time)}
+        </small>
+        <p>
+          ${escapeHTML(post.message)}
+        </p>
+      </div>
+    `;
+
+  });
+
+  feed.innerHTML=html;
+
+  feed.scrollTop=feed.scrollHeight;
+
+}
+
+
+function shareMaterial(){
+
+  const name=
+    document.getElementById('materialName').value.trim();
+
+  const title=
+    document.getElementById('materialTitle').value.trim();
+
+  const link=
+    document.getElementById('materialLink').value.trim();
+
+  if(!name || !title || !link){
+
+    alert('Please complete all material fields.');
+
+    return;
+  }
+
+  const material={
+    name:name,
+    title:title,
+    link:link
+  };
+
+  const materials=
+    JSON.parse(
+      localStorage.getItem('ywcf-materials') || '[]'
+    );
+
+  materials.push(material);
+
+  localStorage.setItem(
+    'ywcf-materials',
+    JSON.stringify(materials)
+  );
+
+  document.getElementById('materialName').value='';
+  document.getElementById('materialTitle').value='';
+  document.getElementById('materialLink').value='';
+
+  renderMaterials();
+
+}
+
+
+function renderMaterials(){
+
+  const feed=
+    document.getElementById('materialFeed');
+
+  const materials=
+    JSON.parse(
+      localStorage.getItem('ywcf-materials') || '[]'
+    );
+
+  if(!materials.length){
+
+    feed.innerHTML=`
+      <div class="material-item">
+        <strong>Learning shelf</strong>
+        <p class="small">
+          Shared learner resources will appear here.
+        </p>
+      </div>
+    `;
+
+    return;
+  }
+
+  let html='';
+
+  materials.forEach(item=>{
+
+    html+=`
+      <div class="material-item">
+        <strong>
+          ${escapeHTML(item.title)}
+        </strong>
+
+        <p class="small">
+          Shared by ${escapeHTML(item.name)}
+        </p>
+
+        <a
+          href="${escapeAttribute(item.link)}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open material →
+        </a>
+      </div>
+    `;
+
+  });
+
+  feed.innerHTML=html;
+
+}
+
+
+function escapeHTML(value){
+
+  return String(value)
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;')
+    .replace(/'/g,'&#039;');
+
+}
+
+
+function escapeAttribute(value){
+
+  return String(value)
+    .replace(/"/g,'%22')
+    .replace(/</g,'%3C')
+    .replace(/>/g,'%3E');
+
+}
+
+
+(function(){
+
+  try{
+
+    const savedProgress=
+      JSON.parse(
+        localStorage.getItem('ywcf-progress') || '[]'
+      );
+
+    const boxes=[
+      ...document.querySelectorAll('.checklist input')
+    ];
+
+    boxes.forEach((x,i)=>{
+      x.checked=!!savedProgress[i];
+    });
+
+    progress();
+
+    const journal=
+      localStorage.getItem('ywcf-journal');
+
+    if(journal){
+
+      document.getElementById('journalText').value=
+        journal;
+
+    }
+
+    renderChat();
+    renderMaterials();
+
+  }catch(e){
+
+    console.log(e);
+
+  }
+
+})();
+
+</script>
+
+</body>
+</html>
