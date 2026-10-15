@@ -360,6 +360,7 @@ footer p{margin:7px 0;color:#dfe6ef}
   .navlinks a{font-size:.76rem}
 }
 
+
 /* Language Bridges collaboration section */
 .language-bridges{background:linear-gradient(135deg,rgba(16,86,102,.09),rgba(247,244,213,.55),rgba(211,150,140,.12))}
 .bridge-banner{margin:28px 0;padding:30px;border-radius:24px;background:linear-gradient(130deg,var(--ink),var(--midnight));color:#fff;box-shadow:var(--shadow)}
@@ -378,6 +379,7 @@ footer p{margin:7px 0;color:#dfe6ef}
 .bridge-invite .small{color:#f5eee2}
 @media(max-width:650px){.bridge-banner,.bridge-steps{padding:22px}.language-chips span{font-size:.84rem}}
 
+
 /* Community-contributed language shelf */
 .other-languages{background:linear-gradient(145deg,rgba(211,150,140,.10),rgba(247,244,213,.42),rgba(16,86,102,.07))}
 .language-share-layout{display:grid;grid-template-columns:minmax(0, .9fr) minmax(0,1.1fr);gap:22px;align-items:start;margin-top:26px}
@@ -395,6 +397,8 @@ footer p{margin:7px 0;color:#dfe6ef}
 .language-shelf-head{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:16px}
 .language-shelf-head .language-filter{max-width:230px}
 @media(max-width:760px){.language-share-layout{grid-template-columns:1fr}}
+
+
 
 /* GEN Z VISUAL UPGRADE — preserves all original lessons and features */
 :root{
@@ -434,144 +438,33 @@ section:nth-of-type(even){background:linear-gradient(135deg,rgba(220,231,240,.52
 .card{border:1px solid rgba(37,52,79,.10);border-radius:24px;box-shadow:0 10px 28px rgba(37,52,79,.07);transition:transform .2s ease,box-shadow .2s ease;background:rgba(255,253,249,.96)}
 .card:hover{transform:translateY(-5px) rotate(-.15deg);box-shadow:0 18px 36px rgba(37,52,79,.12)}
 .tag{background:var(--navy);color:var(--beige);padding:5px 10px}
-.cn{font-size:2.2rem;font-weight:850}
-.pinyin{color:var(--teal)}
-.lesson{padding-top:8px}
-.quiz,details,.community-shell>*,.journal,.creator-card{border-radius:24px}
-.quiz{border:1px solid rgba(37,52,79,.09);box-shadow:var(--shadow)}
-.quiz button,.community-form button{border-radius:14px;font-weight:750;transition:transform .16s,background .16s}
-.quiz button:hover,.community-form button:hover{transform:translateY(-2px)}
-table{border-radius:18px;box-shadow:var(--shadow)}
-th{background:var(--navy)}
-details{box-shadow:0 5px 18px rgba(37,52,79,.04)}
-.progress{height:12px;background:rgba(37,52,79,.12)}
-.progress span{background:linear-gradient(90deg,var(--rose),var(--tan),var(--moss),var(--midnight));border-radius:999px}
-.journal textarea,.community-form textarea,.community-form input{border-radius:14px;transition:border-color .18s,box-shadow .18s}
-.journal textarea:focus,.community-form textarea:focus,.community-form input:focus{outline:0;border-color:var(--slate);box-shadow:0 0 0 3px rgba(97,120,145,.15)}
-.creator-card{background:linear-gradient(135deg,#fffdf9,#f7f4d5 48%,#f5dfdb);padding:clamp(22px,4vw,40px);border-radius:30px}
-.creator-photo{border-radius:26px;box-shadow:0 15px 35px rgba(37,52,79,.16)}
-.community-shell{align-items:start}
-.chat-message,.material-item{border-radius:18px;box-shadow:0 5px 16px rgba(37,52,79,.04)}
-footer{background:var(--navy);color:white}
+.cn{font-size:2.2rem;font-weight:800}
+.quiz{border:1px solid rgba(37,52,79,.10);box-shadow:0 10px 28px rgba(37,52,79,.06)}
+details{box-shadow:0 6px 18px rgba(37,52,79,.04)}
+.creator-card{border-radius:28px;gap:36px;background:linear-gradient(135deg,#fffdf9,#f7f4d5 55%,#f6e6e3)}
+.creator-photo{border-radius:24px}
+.community-note{background:linear-gradient(135deg,#25344F,#105666);border-radius:26px}
+footer{background:linear-gradient(135deg,#25344F,#0A3323);padding:48px 5%}
+footer p{line-height:1.8}
+.bridge-banner{border-radius:28px;background:linear-gradient(125deg,#25344F,#105666 65%,#0A3323)}
+.bridge-steps{border-radius:24px}
+.language-resource{border-radius:22px;box-shadow:0 8px 22px rgba(37,52,79,.05)}
+.language-share-form input:focus,.language-share-form select:focus,.language-share-form textarea:focus,.community-form input:focus,.community-form textarea:focus{outline:3px solid rgba(16,86,102,.18);border-color:var(--midnight)}
 @media(max-width:760px){
-  header{padding:20px 5% 68px}
   .hero{margin-top:55px}
-  .navlinks{gap:6px}
-  .navlinks a{font-size:.78rem;padding:7px 10px}
-  section{padding:58px 0}
-  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .community-shell{grid-template-columns:1fr}
-  .creator-card{grid-template-columns:1fr;gap:25px;text-align:left}
-  .creator-photo{max-width:240px;width:100%;height:auto;aspect-ratio:1}
+  .creator-card{gap:22px;padding:24px}
+  .community-shell{gap:16px}
+  .language-share-layout{gap:16px}
+  .navlinks{margin-top:8px}
+  .navlinks a{padding:7px 10px}
 }
-@media(max-width:520px){
-  .grid{grid-template-columns:1fr}
-  .community-form .row{grid-template-columns:1fr}
-  h1{letter-spacing:-.055em}
+@media(max-width:580px){
+  header{padding-left:5%;padding-right:5%}
+  main{padding:0 5%}
+  h1{font-size:clamp(2.8rem,15vw,4rem)}
   .lead{font-size:1.05rem}
+  .card{padding:20px}
+  th,td{padding:9px;font-size:.9rem}
 }
+
 </style>
-</head>
-
-<body>
-
-<header id="top">
-
-<nav>
-
-<a class="brand" href="#top">
-你会哭的 · You Will Cry First
-</a>
-
-<div class="navlinks">
-<a href="#idea">Idea</a>
-<a href="#pinyin">Pinyin</a>
-<a href="#tones">Tones</a>
-<a href="#hanzi">Hanzi</a>
-<a href="#vocab">Vocabulary</a>
-<a href="#grammar">Grammar</a>
-<a href="#speaking">Speaking</a>
-<a href="#reading">Reading</a>
-<a href="#culture">Culture</a>
-<a href="#practice">Practice</a>
-<a href="#journal">Journal</a>
-<a href="#community">Community</a>
-<a href="#other-languages">Other Languages</a>
-<a href="#language-bridges">Language Bridges</a>
-<a href="#creator">Creator</a>
-</div>
-
-</nav>
-
-<div class="hero">
-
-<p class="eyebrow">
-A self-directed Chinese language & culture learning project
-</p>
-
-<h1>
-You Will Cry First.
-</h1>
-
-<p class="lead">
-But if you stick with the crying, you earn the path to the Chinese everyone is afraid of.
-</p>
-
-<a class="button" href="#pinyin">
-Enter the learning room ↓
-</a>
-
-</div>
-
-</header>
-
-<main>
-
-<section id="idea">
-
-<span class="section-number">01 · THE IDEA</span>
-
-<h2>
-Why “You Will Cry First”?
-</h2>
-
-<p class="intro">
-Chinese can feel impossible at the beginning. Tones sound unfamiliar.
-Characters look like tiny puzzles. Grammar behaves differently.
-This site turns that feeling into a learning system: small lessons,
-repeated practice, mistakes, reflection and connection with culture.
-</p>
-
-<div class="grid">
-
-<div class="card">
-<span class="tag">Mindset</span>
-<h3>Stay a beginner</h3>
-<p>
-Confusion is not proof that you cannot learn.
-It is information about what needs another round of practice.
-</p>
-</div>
-
-<div class="card">
-<span class="tag">Method</span>
-<h3>Break it down</h3>
-<p>
-Separate sound, tone, character, word, grammar and meaning.
-Then put the pieces back together.
-</p>
-</div>
-
-<div class="card">
-<span class="tag">Practice</span>
-<h3>Return often</h3>
-<p>
-Short, repeated review is more useful than trying to remember everything once.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="pinyin">
